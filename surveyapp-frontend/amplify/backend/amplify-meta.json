@@ -1,0 +1,58 @@
+{
+    "providers": {
+        "awscloudformation": {
+            "AuthRoleName": "amplify-90210wcfrontend-dev-223442-authRole",
+            "UnauthRoleArn": "arn:aws:iam::784380094623:role/amplify-90210wcfrontend-dev-223442-unauthRole",
+            "AuthRoleArn": "arn:aws:iam::784380094623:role/amplify-90210wcfrontend-dev-223442-authRole",
+            "Region": "us-east-1",
+            "DeploymentBucketName": "amplify-90210wcfrontend-dev-223442-deployment",
+            "UnauthRoleName": "amplify-90210wcfrontend-dev-223442-unauthRole",
+            "StackName": "amplify-90210wcfrontend-dev-223442",
+            "StackId": "arn:aws:cloudformation:us-east-1:784380094623:stack/amplify-90210wcfrontend-dev-223442/6b8ae970-e3d0-11ea-8d90-1254a8a4acf7",
+            "AmplifyAppId": "d2sfxgzlxu7q0k"
+        },
+        "categories": {
+            "auth": {
+                "90210wcfrontend4123510b4123510b": {}
+            }
+        }
+    },
+    "auth": {
+        "90210wcfrontend4123510b4123510b": {
+            "service": "Cognito",
+            "providerPlugin": "awscloudformation",
+            "dependsOn": [],
+            "output": {
+                "AppClientSecret": "ksaq530pouqn1hqpuq1ik6urk1blldb0t6mu6o1ufuhmh48rr8v",
+                "UserPoolId": "us-east-1_X0m4SNAUt",
+                "AppClientIDWeb": "73uvei46iskanm62cp5mfov4ks",
+                "AppClientID": "21pfo30kc4mh59rbmu6rrq4l42",
+                "UserPoolName": "90210wcfrontend4123510b_userpool_4123510b"
+            },
+            "lastPushTimeStamp": "2020-09-06T14:03:28.454Z",
+            "providerMetadata": {
+                "s3TemplateURL": "https://s3.amazonaws.com/amplify-90210wcfrontend-dev-223442-deployment/amplify-cfn-templates/auth/90210wcfrontend4123510b4123510b-cloudformation-template.yml",
+                "logicalId": "auth90210wcfrontend4123510b4123510b"
+            }
+        }
+    },
+    "api": {
+        "surveyapp-backend": {
+            "service": "AppSync",
+            "output": {
+                "authConfig": {
+                    "defaultAuthentication": {
+                        "authenticationType": "API_KEY"
+                    },
+                    "additionalAuthenticationProviders": null
+                },
+                "GraphQLAPIIdOutput": "4xx3nmlhwrdi3g5w5uivif5ney",
+                "GraphQLAPIEndpointOutput": "https://z2sv4sm7n5afrlsvleoxqeqske.appsync-api.us-east-1.amazonaws.com/graphql",
+                "name": "surveyapp-backend",
+                "region": "us-east-1",
+                "GraphQLAPIKeyOutput": "da2-fmfn6jeygvcxdlu44lcboad36e"
+            },
+            "lastPushTimeStamp": "2020-09-06T14:04:05.374Z"
+        }
+    }
+}
